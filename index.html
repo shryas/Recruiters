@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recruiters</title>
+</head>
+
+<body>
+    <div class="container-fluid padzero">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bgnav">
+            <div class="col-md-2 col-sm-10 col-xs-8">
+                <a class="navbar-brand" href="#"><img class="img-responsive" src="./images/logolarge.png" alt="logo">
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Togglermenu"
+                    aria-controls="Togglermenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Navbar List -->
+            <div class="collapse navbar-collapse" id="Togglermenu">
+                <ul class="navbar-nav" style="padding:0px 50px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recruiters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item loginbtn">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" style="position: relative;bottom: 7px;">&times;</button>
+                    <h4 class="modal-title pull-left" style="position: absolute;">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <p>Email :</p>
+                        <input type="email" class="form-control" placeholder="Email Address" aria-label="Email"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <p>Password :</p>
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Login</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <p>New to Recruiter? <span style="color:#4d8444;cursor:pointer">Register Here..</span> </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./images/c1.jpg">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/c2.jpg">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/c3.jpg">
+                <div class="container">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Search Form-->
+        <form class="col-sm-12" id="searchForm">
+            <div class="form-group col-sm-4 col-sm-offset-2">
+                <div class="input-group input-group-lg center-block">
+                    <input type="text" class="form-control" style="width:85%" placeholder="Search Jobs" aria-label="Search Jobs"
+                        aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary custombtn" style="height:47px;" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Register-->
+            <div class="form-group col-sm-2 curoselhide">
+                <p>New to Recruiters?</p>
+                <button type="submit" class="btn custombtn">Register with us</button>
+                <p style="margin:5px auto; color:white">or</p>
+                <p class="upload">Upload CV</p>
+                <p style="color:white;font-size:10px">Max 2MB, doc, docx, pdf</p>
+            </div>
+            <!-- Carousel Job Alert-->
+            <div class="form-group col-sm-2 curoselhide">
+                <p style="color:white;">Get best matched Jobs on your Email.
+                    No Registration needed.</p>
+                <button class="btn custombtn" style="margin-bottom:10px">Create a Job Alert</button>
+            </div>
+        </form>
+    </div>
+    <!-- /.carousel -->
+
+    <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 30px; padding:10px 0px">
+                <div class="col-md-12 col-sm-12 col-xs-12" style="background: white;">
+                    <p class="divheading" style="margin: 20px auto;">Top Companies <a class="btn btn-primary" style="background: none;color: black;border: none;padding-right:0px"
+                            data-toggle="collapse" href="#myCollapsible" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                        </a></p>
+                    <ul class="collapse list-group" id="myCollapsible">
+                        <li class="list-group-item">Google</li>
+                        <li class="list-group-item">Facebook</li>
+                        <li class="list-group-item">SAP Labs</li>
+                        <li class="list-group-item">NetApp</li>
+                        <li class="list-group-item">Oracle</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 padzero" style="background: white; margin:10px auto">
+                    <p class="divheading" style="margin: 20px auto;">Filters <a class="btn btn-primary" style="background: none;color: black;border: none;"
+                            data-toggle="collapse" href="#myCollapsiblefilter" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                        </a></p>
+                    <ul class="collapse list-group" id="myCollapsiblefilter">
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Freshness</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">Last 30 days</a>
+                                        <a class="dropdown-item">Last 15 days</a>
+                                        <a class="dropdown-item">Last 7 days</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Location</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">Banglore</a>
+                                        <a class="dropdown-item">Pune</a>
+                                        <a class="dropdown-item">Chennai</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Industry</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">IT Software</a>
+                                        <a class="dropdown-item">Recruitment</a>
+                                        <a class="dropdown-item">Marketing</a>
+                                        <a class="dropdown-item">Sales</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Salary</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">0-3 Lakhs</a>
+                                        <a class="dropdown-item">3-6 Lakhs</a>
+                                        <a class="dropdown-item">6-10 Lakhs</a>
+                                        <a class="dropdown-item">10-15 Lakhs</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Jobs Listing -->
+            <div class="col-md-6 col-sm-12 col-xs-12" style="margin-top: 30px; padding:10px">
+                <div class="col-md-12 col-sm-12 col-xs-12" style="padding:20px;background: white;margin-bottom: 10px">
+                    <p class="divheading">Jobs in Bangalore</p>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 joblist">
+
+                    <div class="row">
+                        <h5>CAN/UDS - Automotive Development - 02 to 08 Yrs - Bangalore</h5>
+                        <br>
+                        <p><i class="fa fa-building" aria-hidden="true"></i>Macropace Technologies</p>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-4 padzero">
+                                <p> <i class="fa fa-briefcase" aria-hidden="true"></i>2-7 Yrs</p>
+                            </div>
+                            <div class="col-md-4 padzero">
+                                <p><i class="fa fa-globe" aria-hidden="true" style="font-size: 13px;"></i>Banglore</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 padzero">
+                            <div class="col-md-3">
+                                <p>Keyskills:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Embedded C, UDS, Automotive, Diagnostics, Canoe, Canalyzer, Canon</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12  padzero">
+                            <div class="col-md-3">
+                                <p>Job Description:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Must be automotive domain experience;Minimum 2 to 8 years experience , Must be
+                                    strong in embedded C ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h5>Urgently Required Sales Manager for Max life Insurance comp</h5>
+                        <br>
+                        <p><i class="fa fa-building" aria-hidden="true"></i>Step Up Placements</p>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-4 padzero">
+                                <p> <i class="fa fa-briefcase" aria-hidden="true"></i>3-8 Yrs</p>
+                            </div>
+                            <div class="col-md-4 padzero">
+                                <p><i class="fa fa-globe" aria-hidden="true" style="font-size: 13px;"></i>Banglore</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-3">
+                                <p>Keyskills:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Delhi NCR, Mumbai, Bengaluru, Chennai, Hyderabad, Pune, Kolkata, Ahmedabad, Agra</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-3">
+                                <p>Job Description:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>sales manager, business development manager, relationship manager, brokers,...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h5>Immediate job Opening for Teradata Developer in Capgemini</h5>
+                        <br>
+                        <p><i class="fa fa-building" aria-hidden="true"></i>Crown Solutions India (P) Ltd</p>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-4 padzero">
+                                <p> <i class="fa fa-briefcase" aria-hidden="true"></i>4-9 Yrs</p>
+                            </div>
+                            <div class="col-md-4 padzero">
+                                <p><i class="fa fa-globe" aria-hidden="true" style="font-size: 13px;"></i>Banglore</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-3">
+                                <p>Keyskills:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Teradata, Informatica</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-3">
+                                <p>Job Description:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>We have a complete project team and consultants with excellent experience track
+                                    record, well grounded in ...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h5>Selenium and C#- Tcs - Bangalore (c2h)</h5>
+                        <br>
+                        <p><i class="fa fa-building" aria-hidden="true"></i>InTimeTec VisionSoft Pvt Ltd</p>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-4 padzero">
+                                <p> <i class="fa fa-briefcase" aria-hidden="true"></i>4-6 Yrs</p>
+                            </div>
+                            <div class="col-md-4 padzero">
+                                <p><i class="fa fa-globe" aria-hidden="true" style="font-size: 13px;"></i>Banglore</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-3">
+                                <p>Keyskills:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>MS SQL Server, SSIS, Stored Procedures, Database Development...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 padzero">
+                            <div class="col-md-3">
+                                <p>Job Description:</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Experience performing database migrations; experience analyzing current database
+                                    performance and making ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Div rec service -->
+            <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 30px; padding:10px">
+                <div class="col-md-12 col-sm-12 col-xs-12" style="background: white;">
+                    <h5 style="font-weight: bold;text-align: center;">Recruiter Career Service</h5>
+                    <hr style="margin-top: 0px;">
+                    <p style="color: #4d8444;">Increase your profile visiblity up to 3 times with Naukri Resume Display</p>
+                    <p style="font-size: 13px;">Get your profile marked as featured and increase your visibility among
+                        recruiters by 300%</p>
+                    <button type="submit" class="btn custombtn" style="margin: 10px auto;display: block;width: 100%;">Increase
+                        Visibility</button>
+                </div>
+
+                <!-- Top Rec -->
+                <div class="col-md-12 col-sm-12 col-xs-12 toprec">
+                    <h5>Top Recruiters</h5>
+                    <hr style="margin-top: 0px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12 padzero" style="border-bottom: 1px solid #73c16773;margin-bottom: 20px;">
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <img class="img-responsive" src="./images/propic1.jpg" style="height:70px">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 padzero">
+                            <p style="margin-bottom: 2px;">Yuvraj</p>
+                            <p style="color: #4d8444; font-size:12px">Technical Recruiter</p>
+                            <p style="font-size:12px"><i class="fa fa-building" aria-hidden="true" style="color: #4d8444;"></i>
+                                Doctors For You<br>
+                                <i class="fa fa-globe" aria-hidden="true" style="color: #4d8444;"></i> Banglore</p>
+                        </div>
+                        <button type="submit" class="btn custombtn">Follow</button>
+                    </div>
+
+                    <div class="col-md-12 padzero" style="margin-bottom: 20px;">
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <img class="img-responsive" src="./images/propic1.jpg" style="height:70px">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7 padzero">
+                            <p style="margin-bottom: 2px;">Rakesh</p>
+                            <p style="color: #4d8444; font-size:12px">Recruiter</p>
+                            <p style="font-size:12px"><i class="fa fa-building" aria-hidden="true" style="color: #4d8444;"></i>
+                                Data Typings<br>
+                                <i class="fa fa-globe" aria-hidden="true" style="color: #4d8444;"></i> Banglore</p>
+                        </div>
+                        <button type="submit" class="btn custombtn">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid padzero footer">
+        <div class="col-md-12 col-sm-12 col-xs-12 footerinfo">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h5 class="center">Information</h5>
+                <hr style="border-top: 1px solid #71be66;">
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Careers with Us</p>
+                <p>Sitemap</p>
+                <p>Contact Us</p>
+                <p>FAQs</p>
+                <p>Fraud Alert</p>
+                <p>Trust & Safety</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h5 class="center">Job Seekers</h5>
+                <hr style="border-top: 1px solid #71be66;">
+                <p>Register Now</p>
+                <p>Search Jobs</p>
+                <p>Login</p>
+                <p>Create Job Alert</p>
+                <p>Report a Problem</p>
+                <p>Blogs</p>
+                <p>Security Advice</p>
+                <p>mobile Site</p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h5 class="center">Employers</h5>
+                <hr style="border-top: 1px solid #71be66;">
+                <p>Post Jobs</p>
+                <p>Access Database</p>
+                <p>Manage Responses</p>
+                <p>RMS</p>
+                <p>Buy Online</p>
+                <p>Recruiter Research</p>
+                <p>view Resumes</p>
+                <p>Interview Pro</p>
+            </div>
+        </div>
+        <div class="col-ma-12 col-sm-12 col-xs-12 greenbg">
+            <p>Copyrights 2018 <span>|</span> All rights reserved <span>|</span> <span>Recruiters</span>.</p>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./script/custom.js"></script>
+
+</html>
